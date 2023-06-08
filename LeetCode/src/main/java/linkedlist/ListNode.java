@@ -13,4 +13,14 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public void print() {
+        ListNode head = this;
+        System.out.print(head.val + " ");
+        while (head.next != null) {
+            System.out.print(head.next.val + " ");
+            head = head.next;
+        }
+        System.out.println();
+    }
 }

@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class MajorityElement {
     public static void main(String[] args) {
-        int[] nums = {3, 2, 3, 5, 7, 3, 3}; // 2 3 3 3 5 7
+        int[] nums = {3, 2, 3, 5, 7, 3, 3};
 
         System.out.println(majorityElement(nums));
         System.out.println(majorityElement1(nums));

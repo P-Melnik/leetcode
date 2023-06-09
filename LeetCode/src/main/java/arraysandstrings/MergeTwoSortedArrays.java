@@ -1,4 +1,4 @@
-package org.example;
+package arraysandstrings;
 
 public class MergeTwoSortedArrays {
     

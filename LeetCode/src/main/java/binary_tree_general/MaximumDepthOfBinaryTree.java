@@ -2,16 +2,16 @@ package binary_tree_general;
 
 public class MaximumDepthOfBinaryTree {
     public static void main(String[] args) {
-        ThreeNode root = new ThreeNode(3,
-                new ThreeNode(9, null, null),
-                new ThreeNode(20,
-                        new ThreeNode(15, null, null),
-                        new ThreeNode(7, null, null)));
+        TreeNode root = new TreeNode(3,
+                new TreeNode(9, null, null),
+                new TreeNode(20,
+                        new TreeNode(15, null, null),
+                        new TreeNode(7, null, null)));
 
         System.out.println(maxDepth(root));
     }
 
-    public static int maxDepth(ThreeNode root) {
+    public static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         } else {

@@ -9,18 +9,17 @@ public class InvertBinaryTree {
 
     }
 
-////    public static TreeNode invertTree(TreeNode root) {
-////        while (root.left != null || root.right != null) {
-////            swap(root);
-////            root =
-////        }
-//
-//    }
+    public static TreeNode invertTree(TreeNode root) {
+        if (root == null) return null;
 
-    public static void swap(TreeNode root) {
-        int temp;
-        temp = root.left.val;
-        root.left.val = root.right.val;
-        root.right.val = temp;
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        invertTree(root.right);
+        invertTree(root.left);
+
+        return root;
     }
+
 }
